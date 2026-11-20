@@ -75,7 +75,7 @@ Solo había un tornillo suelto que era independiente al montaje y desmontaje.
 
 **Fotografías de referencia (nombre de archivo o ubicación):**
 
-
+![Imagenes del montaje y desmontaje](Images)
 
 No retiréis la CPU ni el disipador sin indicación del profesor. Si se retira el disipador, consultad sobre limpieza y pasta térmica antes de volver a instalarlo.
 
@@ -85,14 +85,14 @@ Registrad únicamente lo que hayáis hecho; marcad **N/P** si no procede.
 
 | Operación | Hecho | N/P | Foto / observaciones |
 |---|:---:|:---:|---|
-| Apertura y fotos iniciales | X | ☐ | |
-| Desconexión y organización de cables | X | ☐ | |
-| Desmontaje / montaje de memoria | X | ☐ | |
-| Revisión / montaje de almacenamiento | X | ☐ | |
-| CPU y disipador, si se autoriza | X | ☐ | |
-| Tarjetas de expansión | X | ☐ | |
-| Reconexión y orden de cables | X | ☐ | |
-| Cierre y limpieza del puesto | X | ☐ | |
+| Apertura y fotos iniciales | X | ☐ |![](Images/PC) |
+| Desconexión y organización de cables | X | ☐ |![](Images/Cableado) |
+| Desmontaje / montaje de memoria | X | ☐ |![](Images/RAM.jpg) |
+| Revisión / montaje de almacenamiento | X | ☐ |![](Images/Montaje/Montaje_Disco.jpg) |
+| CPU y disipador, si se autoriza | X | ☐ |![](Images/Limpieza_Pasta.jpg) |
+| Tarjetas de expansión | X | ☐ |![](Images/WIFI.jpg) |
+| Reconexión y orden de cables | X | ☐ |![](Images/Montaje/ResultadoMontaje.jpg) |
+| Cierre y limpieza del puesto | X | ☐ |![](Images/PC) |
 
 ## 7. Incidencia o reparación · Equipo A
 
@@ -149,9 +149,7 @@ El Sistema Operativo se encarga de ejecutar los programas de manera intuitiva pa
 
 **¿Habéis accedido a la UEFI o consultado información de ella? ¿Qué dato habéis visto?**
 
-________________________________________________________________________
-
-________________________________________________________________________
+Al acceder a la UEFI me muestra caracteristicas del ordenador y de seguridad que me habilitan modificar y también me muestra el orden del arranque del ordenador con opción a arrancar cualquier sistema operativo que tengo instalado en mi ordenador.  
 
 No cambiéis ajustes de UEFI sin indicación del profesor. Si no podéis acceder, indicadlo.
 
