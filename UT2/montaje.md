@@ -85,14 +85,14 @@ Registrad únicamente lo que hayáis hecho; marcad **N/P** si no procede.
 
 | Operación | Hecho | N/P | Foto / observaciones |
 |---|:---:|:---:|---|
-| Apertura y fotos iniciales | X | ☐ |![](Images/PC) |
-| Desconexión y organización de cables | X | ☐ |![](Images/Cableado) |
+| Apertura y fotos iniciales | X | ☐ |![](Images/PC/) |
+| Desconexión y organización de cables | X | ☐ |![](Images/Cableado/) |
 | Desmontaje / montaje de memoria | X | ☐ |![](Images/RAM.jpg) |
 | Revisión / montaje de almacenamiento | X | ☐ |![](Images/Montaje/Montaje_Disco.jpg) |
 | CPU y disipador, si se autoriza | X | ☐ |![](Images/Limpieza_Pasta.jpg) |
 | Tarjetas de expansión | X | ☐ |![](Images/WIFI.jpg) |
 | Reconexión y orden de cables | X | ☐ |![](Images/Montaje/ResultadoMontaje.jpg) |
-| Cierre y limpieza del puesto | X | ☐ |![](Images/PC) |
+| Cierre y limpieza del puesto | X | ☐ |![](Images/PC/) |
 
 ## 7. Incidencia o reparación · Equipo A
 
