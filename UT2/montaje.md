@@ -1,0 +1,258 @@
+# SI · UT2 — Ficha de taller: montaje y revisión de un ordenador
+
+## 1. Orden de trabajo
+
+**Fecha:** 15/11/2026  **Puesto:** ____________________  **Equipo / etiqueta:** ____________________
+
+**Integrantes del grupo (2 o 3):**
+
+1. Nombre y apellidos: Iván Jelti Roldán
+2. Nombre y apellidos: Luis Alfonso Ortega Correa
+3. Nombre y apellidos (si procede): __________________________________
+
+> **Equipo A:** ordenador de prácticas utilizado para el montaje o la revisión. Puede estar averiado; no se exige que arranque.
+>
+> **Equipo B:** vuestro propio ordenador funcional. Se utiliza a partir del apartado 9 para analizar el arranque y el hardware desde Linux.
+
+## 2. Recepción e inspección visual · Equipo A
+
+**Trabajo previsto:**
+
+- [X] Desmontaje y montaje
+- [ ] Revisión / diagnóstico
+- [ ] Otro: ___________________________________
+
+**Estado al recibirlo:**
+
+- [X] Completo
+- [ ] Faltan piezas
+- [ ] Sucio
+- [ ] Daños visibles
+
+**Síntomas conocidos, piezas ausentes o daños observados:**
+
+Tornillo suelto independiente al montaje.
+
+## 3. Seguridad y preparación · Equipo A
+
+- [X] Equipo desconectado de la corriente y de los periféricos.
+- [X] Botón de encendido pulsado tras desconectar.
+- [X] Superficie despejada y piezas organizadas.
+- [X] Estado inicial y conexiones fotografiados.
+
+**Herramientas utilizadas:** Destornillador Phillips imantado, alcohol isopropílico, papel y pasta térmica.
+
+**No abráis la fuente ni forcéis piezas.** Ante daños o baterías, avisad al profesor.
+
+## 4. Componentes identificados · Equipo A
+
+Anotad lo que podáis verificar. Si no se distingue, escribid «no identificado».
+
+| Componente | Marca / modelo | Dato observado |
+|---|---|---|
+| Placa base | | |
+| Procesador | | |
+| RAM | | |
+| Almacenamiento | | |
+| Fuente | | |
+| Disipador / ventilador | | |
+| Tarjetas / otros | | |
+
+## 5. Conexiones y observaciones · Equipo A
+
+Identificad y marcad las conexiones presentes y comprobadas:
+
+- [X] Alimentación de la placa
+- [X] Alimentación de la CPU
+- [X] Ventilador de la CPU
+- [X] Datos de almacenamiento
+- [X] Alimentación del disco
+- [X] Panel frontal
+
+**¿Hay algún cable suelto, conector dañado o conexión que no sepáis identificar?**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+**Fotografías de referencia (nombre de archivo o ubicación):**
+
+
+
+No retiréis la CPU ni el disipador sin indicación del profesor. Si se retira el disipador, consultad sobre limpieza y pasta térmica antes de volver a instalarlo.
+
+## 6. Registro del trabajo · Equipo A
+
+Registrad únicamente lo que hayáis hecho; marcad **N/P** si no procede.
+
+| Operación | Hecho | N/P | Foto / observaciones |
+|---|:---:|:---:|---|
+| Apertura y fotos iniciales | X | ☐ | |
+| Desconexión y organización de cables | X | ☐ | |
+| Desmontaje / montaje de memoria | X | ☐ | |
+| Revisión / montaje de almacenamiento | X | ☐ | |
+| CPU y disipador, si se autoriza | X | ☐ | |
+| Tarjetas de expansión | X | ☐ | |
+| Reconexión y orden de cables | X | ☐ | |
+| Cierre y limpieza del puesto | X | ☐ | |
+
+## 7. Incidencia o reparación · Equipo A
+
+**Problema encontrado / hipótesis** (si no hay, indicadlo):
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+**Acción realizada y resultado observado:**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+## 8. Comprobación final · Equipo A
+
+- [X] Piezas sujetas.
+- [X] RAM encajada.
+- [X] Cables revisados.
+- [X] Sin tornillos sueltos.
+- [X] Ventilador de CPU conectado.
+- [X] Puesto recogido.
+
+**¿Encendido autorizado?** X Sí  ☐ No
+
+**Resultado / motivo:** Encendido sin ningún problema.
+
+Una observación no demuestra por sí sola la causa de una avería.
+
+---
+
+## 9. Identificación y arranque · Equipo B
+
+Utilizad vuestro propio ordenador funcional para los siguientes apartados.
+
+**Equipo:** X Portátil  ☐ Sobremesa  ☐ Otro: ___________________________
+
+**Linux:** X Instalado directamente  ☐ Máquina virtual
+
+**Sistema operativo y versión:** Windows 11 Home y Omarchy
+
+**Si es virtual: sistema anfitrión y programa de virtualización:** ______________
+
+**¿Arranca con normalidad? ¿Qué observáis desde el encendido hasta el inicio?**
+
+Arranca con normalidad, permitiendo escoger que sistema operativo arrancar gracias al Dual-Boot.
+
+**¿Qué es el POST y en qué se diferencia de la UEFI y del sistema operativo?**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+**¿Habéis accedido a la UEFI o consultado información de ella? ¿Qué dato habéis visto?**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+No cambiéis ajustes de UEFI sin indicación del profesor. Si no podéis acceder, indicadlo.
+
+## 10. Linux: procesador · `lscpu`
+
+Ejecutad `lscpu`. Adjuntad la salida revisada o indicad si el comando falla.
+
+**Modelo / CPU presentada a Linux:** _______________________________________
+
+**Arquitectura:** ____________________  **CPU lógicas visibles:** ______________
+
+**¿Qué diferencia hay entre núcleo e hilo? ¿Qué podéis concluir de la salida?**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+## 11. Linux: memoria · `free -h`
+
+Adjuntad las salidas de los comandos. Si alguno falla o no está disponible, anotadlo. Antes de entregarlas, ocultad usuarios, nombres de equipo, números de serie y UUID. En una máquina virtual pueden mostrarse recursos virtuales, no el hardware físico completo.
+
+**Memoria total:** ____________________  **Memoria disponible:** ______________
+
+**¿Qué significa «disponible» y por qué puede diferir de «libre»?**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+## 12. Linux: almacenamiento · `lsblk`
+
+**Disco identificado:** ___________________________________________________
+
+**Partición y punto de montaje, si aparecen:** ________________________________
+
+**Explicad la diferencia entre disco, partición y punto de montaje:**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+## 13. Linux: dispositivos · `lspci` y `lsusb`
+
+**Dispositivo 1 y función:** ________________________________________________
+
+**Dispositivo 2 y función:** ________________________________________________
+
+**¿Por qué podría no aparecer un componente físico o mostrarse de otra forma en una máquina virtual?**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+## 14. Duda técnica y uso crítico de IA
+
+Podéis usar una IA de Internet. No compartáis datos personales ni información privada del centro. Sin acceso a IA, resolved la duda con una fuente técnica.
+
+**Herramienta utilizada y fecha:** __________________________________________
+
+**Pregunta planteada:**
+
+________________________________________________________________________
+
+**Respuesta resumida y afirmación concreta que decidisteis comprobar:**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+**Fuente técnica o prueba utilizada y resultado:** confirmada / corregida / no verificada.
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+## 15. Valoración y entrega
+
+**¿Qué paso fue más difícil y cómo lo resolvisteis?**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+**¿Qué relación existe entre el montaje y la información de Linux? Recordad que son equipos distintos.**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+**¿Qué haríais de otra manera en un próximo montaje?**
+
+________________________________________________________________________
+
+________________________________________________________________________
+
+Antes de entregar:
+
+- [ ] Ficha completa.
+- [ ] Fotos identificadas.
+- [ ] Salidas de Linux revisadas.
