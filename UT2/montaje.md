@@ -191,15 +191,23 @@ El punto de montaje es la ubicación en la que se encuentra la partición del di
 
 ## 13. Linux: dispositivos · `lspci` y `lsusb`
 
-**Dispositivo 1 y función:** 
+El comando 'lsusb' me devuelve:  (bash: command not found: 'lsusb')
 
-**Dispositivo 2 y función:** 
+**Dispositivo 1 y función:**
+
+VGA compatible controller: NVIDIA Corporation GB206M [GeForce RTX 5060 Max-Q / Mobile] (rev a1)
+
+Es un componente que transforma los datos a imágenes que se pueden ver a traves de un monitor.
+
+**Dispositivo 2 y función:**
+
+RAM memory: Intel Corporation Alder Lake PCH Shared SRAM (rev 01)
+
+Es un tipo de memoria temporal y muy rápida donde el procesador guarda los datos de los programas activos para acceder a ellos de manera instantánea pero se borra por completo cuando apagas el ordenador.
 
 **¿Por qué podría no aparecer un componente físico o mostrarse de otra forma en una máquina virtual?**
 
-________________________________________________________________________
-
-____________________________________________________________________
+Una máquina virtual no usa el Hardware del ordenador directamente, sino que emula componentes compatibles para funcionar de forma aislada al ordenador y por eso puede aparecer o no algún componente físico.
 
 ## 14. Duda técnica y uso crítico de IA
 
@@ -207,8 +215,7 @@ Podéis usar una IA de Internet. No compartáis datos personales ni información
 
 **Herramienta utilizada y fecha:**
 
-________________________________________________________________________
-
+No he requerido del uso de la IA para esta tarea.
 
 **Pregunta planteada:**
 
@@ -246,6 +253,6 @@ Organizar de mejor manera los componentes a la hora del desmontaje.
 
 Antes de entregar:
 
-- [ ] Ficha completa.
-- [ ] Fotos identificadas.
-- [ ] Salidas de Linux revisadas.
+- [X] Ficha completa.
+- [X] Fotos identificadas.
+- [X] Salidas de Linux revisadas.
