@@ -50,13 +50,13 @@ Anotad lo que podáis verificar. Si no se distingue, escribid «no identificado�
 
 | Componente | Marca / modelo | Dato observado |
 |---|---|---|
-| Placa base | | |
-| Procesador | | |
-| RAM | | |
-| Almacenamiento | | |
-| Fuente | | |
-| Disipador / ventilador | | |
-| Tarjetas / otros | | |
+| Placa base |Gigabyte GA-HB1M-D2V |Socket 1150 |
+| Procesador |Intel Pentium G3220 |3GHZ |
+| RAM |Kingston/Crucial DIMM |8GB/2GB DDR3 240CL 256Mx64 |
+| Almacenamiento |SAMSUNG HD080HJ/P |80GB 3Gb/s |
+| Fuente |POWER MAN IP-S300EF7-2 H |300W 80 PLUS BRONZE |
+| Disipador / ventilador |Intel FAN |disipador de serie |
+| Tarjetas / otros |TP-LINK TL-WN881ND |300Mbps PCI Express |
 
 ## 5. Conexiones y observaciones · Equipo A
 
@@ -71,9 +71,7 @@ Identificad y marcad las conexiones presentes y comprobadas:
 
 **¿Hay algún cable suelto, conector dañado o conexión que no sepáis identificar?**
 
-________________________________________________________________________
-
-________________________________________________________________________
+Solo había un tornillo suelto que era independiente al montaje y desmontaje.  
 
 **Fotografías de referencia (nombre de archivo o ubicación):**
 
@@ -100,9 +98,7 @@ Registrad únicamente lo que hayáis hecho; marcad **N/P** si no procede.
 
 **Problema encontrado / hipótesis** (si no hay, indicadlo):
 
-________________________________________________________________________
-
-________________________________________________________________________
+Durante el montaje y desmontaje no ha habido ningún problema.
 
 **Acción realizada y resultado observado:**
 
@@ -147,9 +143,9 @@ Arranca con normalidad, permitiendo escoger que sistema operativo arrancar graci
 
 **¿Qué es el POST y en qué se diferencia de la UEFI y del sistema operativo?**
 
-________________________________________________________________________
-
-________________________________________________________________________
+El POST es un firmware que ejecuta una autocomprobación del hardware para así poder detectar posibles fallos en el ordenador.
+La UEFI que se encarga de identificar los dispositivos de arranque disponibles y su orden de arranque.
+El Sistema Operativo se encarga de ejecutar los programas de manera intuitiva para el usuario.
 
 **¿Habéis accedido a la UEFI o consultado información de ella? ¿Qué dato habéis visto?**
 
@@ -163,63 +159,68 @@ No cambiéis ajustes de UEFI sin indicación del profesor. Si no podéis acceder
 
 Ejecutad `lscpu`. Adjuntad la salida revisada o indicad si el comando falla.
 
-**Modelo / CPU presentada a Linux:** _______________________________________
+**Modelo / CPU presentada a Linux:** 
 
-**Arquitectura:** ____________________  **CPU lógicas visibles:** ______________
+Intel(R) Core(TM) 7 240H 
+
+**Arquitectura:** x86_64  **CPU lógicas visibles:** 16
 
 **¿Qué diferencia hay entre núcleo e hilo? ¿Qué podéis concluir de la salida?**
 
-________________________________________________________________________
-
-________________________________________________________________________
+Los núcleos son unidades de procesamiento que se encargan de buscar, decodificar y ejecutar las instrucciones obtenidas mediante los hilos que son secuencias de instrucciones lógicas  provenientes de la memoria y otros componentes del ordenador.
 
 ## 11. Linux: memoria · `free -h`
 
 Adjuntad las salidas de los comandos. Si alguno falla o no está disponible, anotadlo. Antes de entregarlas, ocultad usuarios, nombres de equipo, números de serie y UUID. En una máquina virtual pueden mostrarse recursos virtuales, no el hardware físico completo.
 
-**Memoria total:** ____________________  **Memoria disponible:** ______________
+**Memoria total:** 30Gi  **Memoria disponible:** 25Gi
 
 **¿Qué significa «disponible» y por qué puede diferir de «libre»?**
 
-________________________________________________________________________
-
-________________________________________________________________________
+El uso de libre o disponible en el sector del Hardware hace referencia a la cantidad de memoria que puedes utilizar de la memoria total teniendo en cuenta la memoria que esta siendo utilizada en este momento. 
 
 ## 12. Linux: almacenamiento · `lsblk`
 
-**Disco identificado:** ___________________________________________________
+**Disco identificado:** nvme0n1
 
-**Partición y punto de montaje, si aparecen:** ________________________________
+**Partición y punto de montaje, si aparecen:** nvme0n1(p1,p2,p3,p4,:/boot,p5,p6:/home/var/cache/pacman/pkg/var/log/)
 
 **Explicad la diferencia entre disco, partición y punto de montaje:**
 
-________________________________________________________________________
-
-________________________________________________________________________
+El disco es la unidad de almacenamiento que se utiliza en los PC y servidores.
+La partición es una división o parte del disco que se suele utilizar para algo concreto como añadir un segundo sistema operativo sin necesidad de eliminar el primero.
+El punto de montaje es la ubicación en la que se encuentra la partición del disco.
 
 ## 13. Linux: dispositivos · `lspci` y `lsusb`
 
-**Dispositivo 1 y función:** ________________________________________________
+**Dispositivo 1 y función:** 
 
-**Dispositivo 2 y función:** ________________________________________________
+**Dispositivo 2 y función:** 
 
 **¿Por qué podría no aparecer un componente físico o mostrarse de otra forma en una máquina virtual?**
 
 ________________________________________________________________________
 
-________________________________________________________________________
+____________________________________________________________________
 
 ## 14. Duda técnica y uso crítico de IA
 
 Podéis usar una IA de Internet. No compartáis datos personales ni información privada del centro. Sin acceso a IA, resolved la duda con una fuente técnica.
 
-**Herramienta utilizada y fecha:** __________________________________________
+**Herramienta utilizada y fecha:**
+
+________________________________________________________________________
+
 
 **Pregunta planteada:**
 
 ________________________________________________________________________
 
+________________________________________________________________________
+
 **Respuesta resumida y afirmación concreta que decidisteis comprobar:**
+
+________________________________________________________________________
 
 ________________________________________________________________________
 
@@ -235,21 +236,15 @@ ________________________________________________________________________
 
 **¿Qué paso fue más difícil y cómo lo resolvisteis?**
 
-________________________________________________________________________
+La parte del arranque y Hardware desde Linux ya que requería de la búsqueda en las respuestas de los comandos mediante los conocimientos obtenidos en clase junto al criterio propio para poder responder a cada pregunta. 
 
-________________________________________________________________________
+**¿Qué relación existe entre el montaje y la información de Linux? Recordad que son equipos distintos.** 
 
-**¿Qué relación existe entre el montaje y la información de Linux? Recordad que son equipos distintos.**
-
-________________________________________________________________________
-
-________________________________________________________________________
+Su relación se encuentra en que para el correcto funcionamiento de un ordenador necesitas ambos ya que para poder obtener la información requieres de un montaje y para el montaje requieres de la información para que el ordenador funcione. 
 
 **¿Qué haríais de otra manera en un próximo montaje?**
 
-________________________________________________________________________
-
-________________________________________________________________________
+Organizar de mejor manera los componentes a la hora del desmontaje.
 
 Antes de entregar:
 
